@@ -1,0 +1,26 @@
+{
+  "name": "react-view-model-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate app for reporting RVM bugs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-bundle": "steal-tools bundle --dev --minify=false --dest public/",
+    "postinstall": "npm run dev-bundle",
+    "start": "python -m SimpleHTTPServer"
+  },
+  "steal": {
+    "main": "public/index"
+  },
+  "author": "Ryan Wheale",
+  "license": "ISC",
+  "devDependencies": {
+    "can-define": "^2.0.0",
+    "can-route-pushstate": "^4.0.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-view-model": "^1.0.0",
+    "steal": "^1.6.4",
+    "steal-tools": "^1.11.1"
+  }
+}
